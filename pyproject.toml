@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "telbot"
+version = "0.1.0"
+description = ""
+authors = ["Procsima <evseev139@yandex.ru>", "LumbaBalumba <vlad.lazar.ik528@yandex.ru>"]
+packages = [
+    { include = "telbot" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = {extras = ["asyncio", "job-queue"], version = "^21.4"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
